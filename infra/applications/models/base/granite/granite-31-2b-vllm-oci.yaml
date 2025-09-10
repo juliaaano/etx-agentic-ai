@@ -69,19 +69,19 @@ metadata:
     opendatahub.io/dashboard: 'true'
 spec:
   predictor:
-    maxReplicas: 2
-    minReplicas: 2
+    maxReplicas: 4
+    minReplicas: 4
     model:
       modelFormat:
         name: vLLM
       name: ''
       resources:
         limits:
-          nvidia.com/gpu: '2'
+          nvidia.com/gpu: '4'
         requests:
           cpu: '2'
           memory: 4Gi
-          nvidia.com/gpu: '2'
+          nvidia.com/gpu: '4'
       runtime: granite-31-2b-instruct
       storageUri: 'oci://quay.io/redhat-ai-services/modelcar-catalog:granite-3.1-2b-instruct'
     tolerations:
