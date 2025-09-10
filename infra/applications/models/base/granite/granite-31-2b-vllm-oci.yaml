@@ -69,8 +69,8 @@ metadata:
     opendatahub.io/dashboard: 'true'
 spec:
   predictor:
-    maxReplicas: 4
-    minReplicas: 4
+    maxReplicas: 1
+    minReplicas: 1
     model:
       modelFormat:
         name: vLLM
