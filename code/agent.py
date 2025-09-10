@@ -134,6 +134,7 @@ def run_agent(pod_name, namespace):
                 print('='*50)
                 
                 print("Sending prompt to agent...")
+                print("This is the new juliaaano version")
                 response = agent.create_turn(
                     messages=[
                         {
